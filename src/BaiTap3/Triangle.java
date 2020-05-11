@@ -13,7 +13,7 @@ public class Triangle extends Shape{
 
    protected static Triangle instance;
     
-    public static Triangle createInstance()
+    public static Triangle createTriangle()
     {
         if(instance==null)
             instance = new Triangle();

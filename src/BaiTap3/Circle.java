@@ -13,7 +13,7 @@ public class Circle extends Shape{
 
     protected static Circle instance;
     
-    public static Circle createInstance()
+    public static Circle createCircle()
     {
         if(instance==null)
             instance = new Circle();

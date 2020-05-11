@@ -13,7 +13,7 @@ public class Rectangle extends Shape{
 
     protected static Rectangle instance;
     
-    public static Rectangle createInstance()
+    public static Rectangle createRectangle()
     {
         if(instance==null)
             instance = new Rectangle();

@@ -11,18 +11,25 @@ package BaiTap3;
  */
 public class MainBai3 {
     public static void main(String[] args){
-        ShapeFactory Hinh1 = ShapeFactory.Createinstance();
-        ShapeFactory Hinh2 = ShapeFactory.Createinstance();
-        ShapeFactory Hinh3 = ShapeFactory.Createinstance();
+        ShapeFactory shapeFac = new ShapeFactory();
+        Shape hchunhat = shapeFac.createShape(ShapeType.Rectangle);
+        Shape htamgiac = shapeFac.createShape(ShapeType.Triangle);
+        Shape htron = shapeFac.createShape(ShapeType.Circle);
         
-        Shape H1 = Hinh1.createShape(ShapeType.Triangle);
-        System.out.println(H1.draw() );
+        hchunhat.setBrush(": Brush: Bút Chì, ");
+        hchunhat.setFrame("Frame: Khung gỗ, ");
+        hchunhat.setPaper("Paper: Giấy trắng");
+        System.out.println(hchunhat.draw() + hchunhat.getBrush() + hchunhat.getFrame() + hchunhat.getPaper());
         
-        Shape H2 = Hinh2.createShape(ShapeType.Circle);
-        System.out.println(H2.draw());
+        htamgiac.setBrush(": Brush: Bút Bi, ");
+        htamgiac.setFrame("Frame: Khung tranh, ");
+        htamgiac.setPaper("Paper: Giấy màu");
+        System.out.println(htamgiac.draw() + htamgiac.getBrush() + htamgiac.getFrame() + htamgiac.getPaper());
         
-        Shape H3 = Hinh2.createShape(ShapeType.Rectangle);
-        System.out.println(H3.draw());
+        htron.setBrush(": Brush: Bút lông, ");
+        htron.setFrame("Frame: Khung nhựa, ");
+        htron.setPaper("Paper: Giấy học sinh");
+        System.out.println(htron.draw()+ htron.getBrush() + htron.getFrame() + htron.getPaper());
     }
 }
 

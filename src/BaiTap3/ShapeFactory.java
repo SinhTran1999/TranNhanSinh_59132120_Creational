@@ -20,9 +20,12 @@ public class ShapeFactory {
     
      public Shape createShape(ShapeType Type){
          switch(Type){
-            case Rectangle: return new Rectangle();
-            case Triangle: return new Triangle();
-            case Circle: return new Circle();
+            case Rectangle: 
+                return Rectangle.createRectangle();
+            case Triangle: 
+                return Triangle.createTriangle();
+            case Circle: 
+               return Circle.createCircle();
         }
         return null;
      }

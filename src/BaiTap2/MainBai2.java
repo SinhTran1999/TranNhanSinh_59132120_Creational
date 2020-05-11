@@ -22,4 +22,4 @@ public class MainBai2 {
         
         System.out.println("\n" + str.toString());
     }
-}
+} 
